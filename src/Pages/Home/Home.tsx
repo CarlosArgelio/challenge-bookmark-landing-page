@@ -5,6 +5,7 @@ import {
   CallToAction,
   SliceContainer,
   SectionInformative,
+  CardContainer,
 } from "./../../Components";
 
 export const Home = () => {
@@ -18,6 +19,8 @@ export const Home = () => {
       <SliceContainer />
 
       <SectionInformative />
+
+      <CardContainer />
 
       <Attribute />
     </>

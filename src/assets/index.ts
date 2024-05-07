@@ -1,3 +1,5 @@
+import BgDots from "./img/bg-dots.svg";
+
 import IlustrationHeroSvg from "./img/illustration-hero.svg";
 
 import IconHamburguer from "./img/icon-hamburger.svg";
@@ -14,5 +16,7 @@ export const svg = {
   logos: {
     "logo-bookmark": LogoBookmark,
   },
-  utils: {},
+  utils: {
+    "bg-dots": BgDots,
+  },
 };
