@@ -1,5 +1,4 @@
 import { Attribute } from "./Attribute";
-import "./App.css";
 
 export const App = () => {
   return (
