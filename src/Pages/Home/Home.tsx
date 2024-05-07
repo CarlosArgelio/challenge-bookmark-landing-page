@@ -7,6 +7,7 @@ import {
   SectionInformative,
   CardContainer,
   Faqs,
+  SectionSendEmail,
 } from "./../../Components";
 
 export const Home = () => {
@@ -24,6 +25,8 @@ export const Home = () => {
       <CardContainer />
 
       <Faqs />
+
+      <SectionSendEmail />
 
       <Attribute />
     </>

@@ -10,4 +10,5 @@ export { Card } from "./Card";
 export { CardContainer } from "./CardContainer";
 export { FAQSAccordeon } from "./FAQSAccordeon";
 export { Faqs } from "./FAQS";
+export { SectionSendEmail } from "./SectionSendEmail";
 export { Attribute } from "./Attribute";
