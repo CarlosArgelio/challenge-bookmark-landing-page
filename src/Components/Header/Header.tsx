@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { svg } from "./../../assets";
 
 const icons = svg.icons;
@@ -8,15 +9,30 @@ const styles = {
 };
 
 export const Header = () => {
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
+
+  const handleOpenMenu = () => setOpenMenu(true);
+  const handleCloseMenu = () => setOpenMenu(false);
+
   return (
     <header className="ml-8 mr-8 mt-10 mb-20 ">
-      <div className="flex items-center justify-between w-[311px] h-[25px]">
+      <div
+        className={`${
+          openMenu ? "hidden" : ""
+        } flex items-center justify-between w-[311px] h-[25px]`}
+      >
         <img src={logos["logo-bookmark"]} alt="logo bookmark" />
-        <img src={icons["icon-hamburger"]} alt="icon hamburger" />
+        <button onClick={handleOpenMenu}>
+          <img src={icons["icon-hamburger"]} alt="icon hamburger" />
+        </button>
       </div>
 
       {/* Menu */}
-      <div className=" absolute bg-very-dark-blue left-0 top-0 w-full h-full opacity-80 ">
+      <div
+        className={`${
+          openMenu ? "" : "hidden"
+        } absolute bg-very-dark-blue left-0 top-0 w-full h-full opacity-80`}
+      >
         <div className="ml-8 mr-8 mt-10 mb-20">
           <div className="flex items-center justify-between w-[311px] h-[25px]">
             {/* Logo BookMark */}
@@ -26,7 +42,9 @@ export const Header = () => {
             />
 
             {/* Icon X */}
-            <img src={icons["icon-x-white"]} alt="icon x white" />
+            <button onClick={handleCloseMenu}>
+              <img src={icons["icon-x-white"]} alt="icon x white" />
+            </button>
           </div>
         </div>
 
