@@ -11,4 +11,5 @@ export { CardContainer } from "./CardContainer";
 export { FAQSAccordeon } from "./FAQSAccordeon";
 export { Faqs } from "./FAQS";
 export { SectionSendEmail } from "./SectionSendEmail";
+export { Footer } from "./Footer";
 export { Attribute } from "./Attribute";
