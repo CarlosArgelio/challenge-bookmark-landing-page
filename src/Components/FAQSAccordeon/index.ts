@@ -1,0 +1,1 @@
+export { FAQSAccordeon } from "./FAQSAccordeon";

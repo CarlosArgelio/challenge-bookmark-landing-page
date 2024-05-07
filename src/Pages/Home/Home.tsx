@@ -6,6 +6,7 @@ import {
   SliceContainer,
   SectionInformative,
   CardContainer,
+  Faqs,
 } from "./../../Components";
 
 export const Home = () => {
@@ -21,6 +22,8 @@ export const Home = () => {
       <SectionInformative />
 
       <CardContainer />
+
+      <Faqs />
 
       <Attribute />
     </>

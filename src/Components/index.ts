@@ -8,4 +8,6 @@ export { SectionInformative } from "./SectionInformative";
 export { ButtonPrimary } from "./ButtonPrimary";
 export { Card } from "./Card";
 export { CardContainer } from "./CardContainer";
+export { FAQSAccordeon } from "./FAQSAccordeon";
+export { Faqs } from "./FAQS";
 export { Attribute } from "./Attribute";
