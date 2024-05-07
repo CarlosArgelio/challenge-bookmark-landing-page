@@ -1,2 +1,2 @@
-export { Attribute } from "./Attribute";
 export { Header } from "./Header";
+export { Attribute } from "./Attribute";
