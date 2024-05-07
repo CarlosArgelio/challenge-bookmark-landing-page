@@ -4,4 +4,6 @@ export { IlustrationWithBg } from "./IlustrationWithBg";
 export { CallToAction } from "./CallToAction";
 export { Slice } from "./Slice";
 export { SliceContainer } from "./SliceContainer";
+export { SectionInformative } from "./SectionInformative";
+export { ButtonPrimary } from "./ButtonPrimary";
 export { Attribute } from "./Attribute";

@@ -1,0 +1,1 @@
+export { SectionInformative } from "./SectionInformative";

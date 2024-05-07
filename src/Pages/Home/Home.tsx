@@ -4,6 +4,7 @@ import {
   IlustrationWithBg,
   CallToAction,
   SliceContainer,
+  SectionInformative,
 } from "./../../Components";
 
 export const Home = () => {
@@ -15,6 +16,8 @@ export const Home = () => {
       <CallToAction />
 
       <SliceContainer />
+
+      <SectionInformative />
 
       <Attribute />
     </>
