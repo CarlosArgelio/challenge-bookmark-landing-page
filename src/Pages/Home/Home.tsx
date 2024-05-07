@@ -3,6 +3,7 @@ import {
   Header,
   IlustrationWithBg,
   CallToAction,
+  SliceContainer,
 } from "./../../Components";
 
 export const Home = () => {
@@ -12,6 +13,8 @@ export const Home = () => {
       <IlustrationWithBg />
 
       <CallToAction />
+
+      <SliceContainer />
 
       <Attribute />
     </>
