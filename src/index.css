@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Rubik';
+    font-weight: 400;
+    src: url(./assets/font/static/Rubik-Regular.ttf) format('truetype');
+  }
+}
+
+html {
+  font-size: 18px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
