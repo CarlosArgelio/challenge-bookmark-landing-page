@@ -1,0 +1,1 @@
+export { IlustrationWithBg } from "./IlustrationWithBg";
