@@ -1,7 +1,6 @@
 import {
   Attribute,
   Header,
-  IlustrationWithBg,
   CallToAction,
   SliceContainer,
   SectionInformative,
@@ -15,7 +14,6 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <IlustrationWithBg />
 
       <CallToAction />
 
