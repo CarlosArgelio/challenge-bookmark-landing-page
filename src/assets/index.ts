@@ -6,7 +6,7 @@ import IconHamburguer from "./img/icon-hamburger.svg";
 import IconFacebook from "./img/icon-facebook.svg";
 import IconTwitter from "./img/icon-twitter.svg";
 import IconXWhite from "./img/icon-x-white.svg";
-import IconRectangle from "./img/icon-rectangle.svg";
+import IconRectangleRigth from "./img/icon-rectangle-rigth.svg";
 
 import LogoBookmark from "./img/logo-bookmark.svg";
 import LogoBookmarkTextWhiter from "./img/logo-bookmark-bg-text-white.svg";
@@ -21,7 +21,7 @@ export const svg = {
     "icon-facebook": IconFacebook,
     "icon-twitter": IconTwitter,
     "icon-x-white": IconXWhite,
-    "icon-rectangle": IconRectangle,
+    "icon-rectangle-rigth": IconRectangleRigth,
   },
   logos: {
     "logo-bookmark": LogoBookmark,

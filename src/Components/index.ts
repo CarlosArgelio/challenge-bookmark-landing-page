@@ -11,3 +11,5 @@ export { Faqs } from "./FAQS";
 export { SectionSendEmail } from "./SectionSendEmail";
 export { Footer } from "./Footer";
 export { Attribute } from "./Attribute";
+
+export { H2, P } from "./Text";
