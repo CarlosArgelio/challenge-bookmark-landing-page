@@ -7,11 +7,12 @@ export const SectionSendEmail = () => {
   const [email, setEmail] = useState("");
   const [emailInvalid, setEmailInvalid] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
   };
 
-  const handleChange = (e) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleChange = (e: { target: any }) => {
     const { target } = e;
     setEmail(target.value);
     setEmailInvalid(false);
