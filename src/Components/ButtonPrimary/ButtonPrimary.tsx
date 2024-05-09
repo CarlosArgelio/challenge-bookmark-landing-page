@@ -1,4 +1,9 @@
-export type typeButton = "typeOne" | "typeTwo" | "typeThree" | "typeFor";
+export type typeButton =
+  | "typeOne"
+  | "typeTwo"
+  | "typeThree"
+  | "typeFor"
+  | "typeFive";
 export interface PropButton {
   type: typeButton;
   children: string;
@@ -12,6 +17,8 @@ const typesButton = (width?: number) => ({
   typeThree: `bg-[#F7F7F7] rounded-md w-[${width}px] h-[48px] text-very-dark-blue text-sm font-medium shadow-md`,
   typeFor:
     "bg-soft-blue rounded-md w-[232px] h-[48px] text-white text-sm font-medium shadow-md",
+  typeFive:
+    "bg-soft-red rounded-md w-[300px] h-[48px] text-white text-sm font-medium shadow-md",
 });
 
 export const ButtonPrimary = ({ type, children, width }: PropButton) => {

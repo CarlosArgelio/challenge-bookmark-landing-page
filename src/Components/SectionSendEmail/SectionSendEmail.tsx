@@ -12,10 +12,14 @@ export const SectionSendEmail = () => {
         </div>
 
         <div className="mb-4">
-          <input type="email" placeholder="Enter your email address" />
+          <input
+            className="w-[300px] h-[48px] rounded-md"
+            type="email"
+            placeholder="Enter your email address"
+          />
         </div>
-        <div className="absolute mt-[350px]">
-          <ButtonPrimary type="typeOne" children="Contact Us" />
+        <div>
+          <ButtonPrimary type="typeFive" children="Contact Us" />
         </div>
       </div>
     </div>
