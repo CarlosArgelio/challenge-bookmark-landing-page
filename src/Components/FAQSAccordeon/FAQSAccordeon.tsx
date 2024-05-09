@@ -1,55 +1,106 @@
+import { useState } from "react";
 import { ButtonPrimary } from "./../../Components";
 
+export interface Props {
+  title: string;
+  description: string;
+  open: boolean;
+  set: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const IconArrow = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+      <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
+    </svg>
+  );
+};
+
+export const AccordeonItem = ({ title, description, open, set }: Props) => {
+  return (
+    <div className="mb-5">
+      <div onClick={() => set(!open)} className="flex justify-between mb-2">
+        <h3 className="">{title}</h3>
+        <div className="mt-1">
+          <IconArrow />
+        </div>
+      </div>
+      <p
+        className={`${open ? "" : "hidden"} text-[15px] text-grayish-blue mb-4`}
+      >
+        {description}
+      </p>
+      <hr />
+    </div>
+  );
+};
+
 export const FAQSAccordeon = () => {
+  const [openQuestionOne, setOpenQuestionOne] = useState(false);
+  const [openQuestionTwo, setOpenQuestionTwo] = useState(false);
+  const [openQuestionThree, setOpenQuestionThree] = useState(false);
+  const [openQuestionFor, setOpenQuestionFor] = useState(false);
+
+  const stateOsQuestion = [
+    {
+      open: openQuestionOne,
+      set: setOpenQuestionOne,
+    },
+    {
+      open: openQuestionTwo,
+      set: setOpenQuestionTwo,
+    },
+    {
+      open: openQuestionThree,
+      set: setOpenQuestionThree,
+    },
+    {
+      open: openQuestionFor,
+      set: setOpenQuestionFor,
+    },
+  ];
+
   return (
     <>
       {/* Container Accordeon */}
-      <div>
-        {/* <!-- Question 1 --> */}
-        <div>
-          <h3>What is Bookmark?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
-            quis quam ornare mattis.
-          </p>
-        </div>
-        {/* !-- Question 2 --> */}
-        <div>
-          <h3>How can I request a new browser?</h3>
-          <p>
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
-            aliquet convallis ultricies. Mauris augue massa, ultricies non
-            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-            imperdiet.
-          </p>
-        </div>
-        {/* <!-- Question 3 --> */}
-        <div>
-          <h3>Is there a mobile app?</h3>
-          <p>
-            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
-            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
-            ex et ultricies bibendum.
-          </p>
-        </div>
-        {/* <!-- Question 4 --> */}
-        <div>
-          <h3>What about other Chromium browsers?</h3>
-          <p>
-            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
-            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
-            pellentesque non ut velit.
-          </p>
-        </div>
+      <div className="mx-5">
+        {ITEMS_FAQS.map((item, index) => (
+          <AccordeonItem
+            key={index}
+            title={item.title}
+            description={item.description}
+            open={stateOsQuestion[index].open}
+            set={stateOsQuestion[index].set}
+          />
+        ))}
         {/* Button */}
-        <div>
+        <div className="flex justify-center mb-32">
           <ButtonPrimary type="typeOne" children="More Info" />
         </div>
       </div>
     </>
   );
 };
+
+const ITEMS_FAQS = [
+  {
+    title: "What is Bookmark?",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis",
+  },
+  {
+    title: "How can I request a new browser?",
+    description:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
+  },
+  {
+    title: "Is there a mobile app?",
+    description:
+      "Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.",
+  },
+  {
+    title: "What about other Chromium browsers?",
+    description:
+      "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.",
+  },
+];
