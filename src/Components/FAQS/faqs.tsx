@@ -1,13 +1,13 @@
-import { FAQSAccordeon } from "./../../Components";
+import { FAQSAccordeon, H2, P } from "./../../Components";
 
 export const Faqs = () => {
   return (
-    <div>
-      <h2>Frequently Asked Questions</h2>
-      <p>
+    <div className="mx-5">
+      <H2>Frequently Asked Questions</H2>
+      <P>
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
-      </p>
+      </P>
 
       <FAQSAccordeon />
     </div>

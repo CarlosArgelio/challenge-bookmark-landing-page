@@ -5,7 +5,7 @@ const logos = svg.logos;
 
 export const CardContainer = () => {
   return (
-    <div>
+    <div className="mb-36">
       <H2>Download the extension</H2>
       <P>
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
