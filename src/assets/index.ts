@@ -14,6 +14,9 @@ import IconRectangleRed from "./img/icon-rectangle-red.svg";
 import LogoBookmark from "./img/logo-bookmark.svg";
 import LogoBookmarkTextWhiter from "./img/logo-bookmark-bg-text-white.svg";
 import LogoBookmarkBgWhite from "./img/logo-bookmark-bg-white.svg";
+import LogoChrome from "./img/logo-chrome.svg";
+import LogoFirefox from "./img/logo-firefox.svg";
+import LogoOpera from "./img/logo-opera.svg";
 
 export const svg = {
   ilustrations: {
@@ -33,6 +36,9 @@ export const svg = {
     "logo-bookmark": LogoBookmark,
     "logo-bookmark-bg-text-white": LogoBookmarkTextWhiter,
     "logo-bookmark-bg-white": LogoBookmarkBgWhite,
+    "logo-chrome": LogoChrome,
+    "logo-firefox": LogoFirefox,
+    "logo-opera": LogoOpera,
   },
   utils: {
     "bg-dots": BgDots,

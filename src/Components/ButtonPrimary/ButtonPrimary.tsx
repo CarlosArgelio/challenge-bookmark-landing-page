@@ -10,7 +10,8 @@ const typesButton = (width?: number) => ({
     "bg-soft-blue rounded-md w-[114px] h-[48px] text-white font-semibold shadow-md",
   typeTwo: `bg-soft-blue rounded-md w-[${width}px] h-[48px] text-white text-sm font-medium shadow-md`,
   typeThree: `bg-[#F7F7F7] rounded-md w-[${width}px] h-[48px] text-very-dark-blue text-sm font-medium shadow-md`,
-  typeFor: "",
+  typeFor:
+    "bg-soft-blue rounded-md w-[232px] h-[48px] text-white text-sm font-medium shadow-md",
 });
 
 export const ButtonPrimary = ({ type, children, width }: PropButton) => {
