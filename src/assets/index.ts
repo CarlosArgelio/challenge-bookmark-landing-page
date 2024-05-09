@@ -10,6 +10,7 @@ import IconXWhite from "./img/icon-x-white.svg";
 import IconRectangleRigth from "./img/icon-rectangle-rigth.svg";
 import IconRectangleLeft from "./img/icon-rectangle-left.svg";
 import IconRectangleRed from "./img/icon-rectangle-red.svg";
+import IconError from "./img/icon-error.svg";
 
 import LogoBookmark from "./img/logo-bookmark.svg";
 import LogoBookmarkTextWhiter from "./img/logo-bookmark-bg-text-white.svg";
@@ -31,6 +32,7 @@ export const svg = {
     "icon-rectangle-rigth": IconRectangleRigth,
     "icon-rectangle-left": IconRectangleLeft,
     "icon-rectangle-red": IconRectangleRed,
+    "icon-error": IconError,
   },
   logos: {
     "logo-bookmark": LogoBookmark,

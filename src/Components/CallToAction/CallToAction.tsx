@@ -34,7 +34,7 @@ export const CallToAction = () => {
         <div className="absolute top-[12.2rem] right-0 -z-50">
           <img src={icons["icon-rectangle-rigth"]} alt="icon rectangle" />
         </div>
-        <div className="z-40">
+        <div>
           <img src={ilustration["illustration-hero"]} alt="illustration hero" />
         </div>
       </div>
