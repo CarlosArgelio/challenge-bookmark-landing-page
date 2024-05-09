@@ -1,12 +1,14 @@
 import BgDots from "./img/bg-dots.svg";
 
 import IlustrationHeroSvg from "./img/illustration-hero.svg";
+import IllustrationFeaturesTab1 from "./img/illustration-features-tab-1.svg";
 
 import IconHamburguer from "./img/icon-hamburger.svg";
 import IconFacebook from "./img/icon-facebook.svg";
 import IconTwitter from "./img/icon-twitter.svg";
 import IconXWhite from "./img/icon-x-white.svg";
 import IconRectangleRigth from "./img/icon-rectangle-rigth.svg";
+import IconRectangleLeft from "./img/icon-rectangle-left.svg";
 import IconRectangleRed from "./img/icon-rectangle-red.svg";
 
 import LogoBookmark from "./img/logo-bookmark.svg";
@@ -16,6 +18,7 @@ import LogoBookmarkBgWhite from "./img/logo-bookmark-bg-white.svg";
 export const svg = {
   ilustrations: {
     "illustration-hero": IlustrationHeroSvg,
+    "illustration-features-tab-1": IllustrationFeaturesTab1,
   },
   icons: {
     "icon-hamburger": IconHamburguer,
@@ -23,6 +26,7 @@ export const svg = {
     "icon-twitter": IconTwitter,
     "icon-x-white": IconXWhite,
     "icon-rectangle-rigth": IconRectangleRigth,
+    "icon-rectangle-left": IconRectangleLeft,
     "icon-rectangle-red": IconRectangleRed,
   },
   logos: {
