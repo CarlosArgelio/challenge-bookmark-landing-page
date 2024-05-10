@@ -60,7 +60,7 @@ export const SectionSendEmail = () => {
           </div>
           <button
             type="submit"
-            className="bg-soft-red rounded-md w-[300px] h-[48px] text-white text-sm font-medium shadow-md"
+            className="bg-soft-red rounded-md w-[300px] h-[48px] text-white text-sm font-medium shadow-md hover:border-2 hover:border-soft-red hover:bg-white hover:text-soft-red"
           >
             Contact Us
           </button>

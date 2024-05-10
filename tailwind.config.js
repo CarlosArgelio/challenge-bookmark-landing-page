@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        s: "320px",
+        m: "375px",
+        l: "425px",
+      },
       colors: {
         "soft-blue": "hsl(231, 69%, 60%)",
         "soft-red": "hsl(0, 94%, 66%)",

@@ -18,7 +18,7 @@ const typesButton = (width?: number) => ({
   typeFor:
     "bg-soft-blue rounded-md w-[232px] h-[48px] text-white text-sm font-medium shadow-md",
   typeFive:
-    "bg-soft-red rounded-md w-[300px] h-[48px] text-white text-sm font-medium shadow-md",
+    "bg-soft-red rounded-md w-[300px] h-[48px] text-white text-sm font-medium shadow-md hover:bg-white",
 });
 
 export const ButtonPrimary = ({ type, children, width }: PropButton) => {
