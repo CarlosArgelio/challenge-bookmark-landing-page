@@ -51,7 +51,7 @@ export const Header = () => {
           </div>
         </div>
 
-        <ul className="top-0 mx-8 mb-6 lg:mx-0 lg:mb-0 lg:absolute lg:h-10 lg:left-[450px] lg:ml-14 lg:mt-2 lg:flex lg:flex-row lg:gap-3 lg:w-full">
+        <ul className="top-0 mx-8 mb-6 lg:mx-0 lg:mb-0 lg:absolute lg:h-10 lg:left-[450px] lg:ml-14 lg:mt-2 lg:flex lg:flex-row lg:gap-3">
           <div className={`${styles.lineGray}`} />
           <li className="text-center uppercase text-white font-normal text-xl lg:text-sm tracking-widest my-[25px] lg:my-0 lg:text-grayish-blue lg:hover:text-soft-red">
             Features
