@@ -1,9 +1,12 @@
 export interface Props {
   children: string;
+  styles?: string;
 }
-export const P = ({ children }: Props) => {
+export const P = ({ children, styles }: Props) => {
   return (
-    <p className="text-grayish-blue text-center text-base font-normal mb-4">
+    <p
+      className={`text-grayish-blue text-center text-base font-normal mb-4 ${styles}`}
+    >
       {children}
     </p>
   );

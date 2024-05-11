@@ -6,11 +6,11 @@ const icons = svg.icons;
 
 export const CallToAction = () => {
   return (
-    <div className="flex flex-col-reverse">
-      <div className="mx-5">
-        <H2>A Simple Bookmark Manager</H2>
+    <div className="flex flex-col-reverse md:flex-row md:m-0">
+      <div className="mx-5 md:pl-6 md:pr-6">
+        <H2 styles="md:text-start md:text-2xl">A Simple Bookmark Manager</H2>
         <div>
-          <P>
+          <P styles="md:text-xs md:text-start">
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
@@ -30,12 +30,16 @@ export const CallToAction = () => {
           />
         </div>
       </div>
-      <div className="mb-12">
-        <div className="absolute top-[12.2rem] right-0 -z-50">
+      <div className="relative w-full mb-12">
+        <div className="absolute top-12 right-0 -z-50">
           <img src={icons["icon-rectangle-rigth"]} alt="icon rectangle" />
         </div>
-        <div>
-          <img src={ilustration["illustration-hero"]} alt="illustration hero" />
+        <div className="right-0 float-right">
+          <img
+            className="w-[400px]"
+            src={ilustration["illustration-hero"]}
+            alt="illustration hero"
+          />
         </div>
       </div>
     </div>
