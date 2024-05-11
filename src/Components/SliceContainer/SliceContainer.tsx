@@ -5,7 +5,7 @@ import { svg } from "./../../assets";
 const icons = svg.icons;
 
 const styles = {
-  lineGray: "h-[1px] bg-[#9194A2]",
+  lineGray: "h-[1px] bg-[#9194A2] md:hidden",
 };
 
 export const SliceContainer = () => {
@@ -34,7 +34,7 @@ export const SliceContainer = () => {
 
   return (
     <>
-      <div className="mb-8">
+      <div className="mb-8 md:mx-14">
         <div className="mb-10 mx-5">
           <div className={`${viewSimpleBooking ? "" : "hidden"}`}>
             <Slice
@@ -55,13 +55,13 @@ export const SliceContainer = () => {
             />
           </div>
         </div>
-        <div className="ml-8 mr-8">
+        <div className="ml-8 mr-8 md:flex md:items-center md:justify-between">
           <div className={`${styles.lineGray}`} />
 
-          <div>
+          <div className="md:flex md:flex-col">
             <button
               onClick={handleSimpleBooking}
-              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center"
+              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
             >
               Simple Bookmarking
             </button>
@@ -76,10 +76,10 @@ export const SliceContainer = () => {
 
           <div className={`${styles.lineGray}`} />
 
-          <div>
+          <div className="md:flex md:flex-col">
             <button
               onClick={handleSpeedySearching}
-              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center"
+              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
             >
               Speedy Searching
             </button>
@@ -93,10 +93,10 @@ export const SliceContainer = () => {
           </div>
           <div className={`${styles.lineGray}`} />
 
-          <div>
+          <div className="md:flex md:flex-col">
             <button
               onClick={handleEasySharing}
-              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center"
+              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
             >
               Easy Sharing
             </button>
