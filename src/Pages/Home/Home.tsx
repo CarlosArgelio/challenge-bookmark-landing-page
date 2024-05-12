@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Attribute,
   Header,
@@ -11,11 +12,20 @@ import {
 } from "./../../Components";
 
 export const Home = () => {
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
+
+  const handleOpenMenu = () => setOpenMenu(true);
+  const handleCloseMenu = () => setOpenMenu(false);
+
   return (
     <>
-      <Header />
+      <Header
+        openMenu={openMenu}
+        handleOpenMenu={handleOpenMenu}
+        handleCloseMenu={handleCloseMenu}
+      />
 
-      <CallToAction />
+      <CallToAction openMenu={openMenu} />
 
       <SliceContainer />
 

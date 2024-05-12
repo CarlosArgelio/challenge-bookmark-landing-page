@@ -1,5 +1,10 @@
-import { useState } from "react";
 import { svg } from "./../../assets";
+
+export interface PropsHeader {
+  openMenu: boolean;
+  handleOpenMenu(): void;
+  handleCloseMenu(): void;
+}
 
 const icons = svg.icons;
 const logos = svg.logos;
@@ -9,12 +14,11 @@ const styles = {
   layoutHeader: "mt-10 mb-20",
 };
 
-export const Header = () => {
-  const [openMenu, setOpenMenu] = useState<boolean>(false);
-
-  const handleOpenMenu = () => setOpenMenu(true);
-  const handleCloseMenu = () => setOpenMenu(false);
-
+export const Header = ({
+  openMenu,
+  handleOpenMenu,
+  handleCloseMenu,
+}: PropsHeader) => {
   return (
     <header
       className={`${styles.layoutHeader} lg:relative px-8 lg:px-40 w-full`}

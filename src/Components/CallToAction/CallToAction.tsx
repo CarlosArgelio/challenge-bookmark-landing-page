@@ -1,10 +1,14 @@
 import { H2, P, ButtonPrimary } from "./../../Components";
 import { svg } from "./../../assets";
 
+export interface PropsCTA {
+  openMenu: boolean;
+}
+
 const ilustration = svg.ilustrations;
 const icons = svg.icons;
 
-export const CallToAction = () => {
+export const CallToAction = ({ openMenu }: PropsCTA) => {
   return (
     <div className="flex flex-col-reverse md:flex-row md:m-0">
       <div className="mx-5 md:pl-6 md:pr-6">
@@ -30,7 +34,7 @@ export const CallToAction = () => {
           />
         </div>
       </div>
-      <div className="relative w-full mb-12">
+      <div className={`${openMenu ? "" : "relative"} w-full mb-12`}>
         <div className="absolute top-12 right-0 -z-50">
           <img src={icons["icon-rectangle-rigth"]} alt="icon rectangle" />
         </div>
