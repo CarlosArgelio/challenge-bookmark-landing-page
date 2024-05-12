@@ -23,7 +23,7 @@ export const SectionSendEmail = () => {
   };
 
   return (
-    <div className="bg-soft-blue h-[440px]">
+    <div className="bg-soft-blue h-[440px] md:h-[340px]">
       <div className="flex flex-col items-center justify-center mx-5">
         <div className="text-white text-center mt-16">
           <p className="text-sm tracking-widest mb-4">35,000+ already joined</p>
@@ -32,7 +32,10 @@ export const SectionSendEmail = () => {
           </h2>
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col md:flex-row md:gap-4"
+        >
           <div>
             {emailInvalid ? (
               <>
@@ -60,7 +63,7 @@ export const SectionSendEmail = () => {
           </div>
           <button
             type="submit"
-            className="bg-soft-red rounded-md w-[300px] h-[48px] text-white text-sm font-medium shadow-md hover:border-2 hover:border-soft-red hover:bg-white hover:text-soft-red"
+            className="bg-soft-red rounded-md w-[300px] h-[48px] text-white text-sm font-medium shadow-md hover:border-2 hover:border-soft-red hover:bg-white hover:text-soft-red md:w-[120px]"
           >
             Contact Us
           </button>
