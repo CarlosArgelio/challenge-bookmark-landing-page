@@ -61,7 +61,7 @@ export const SliceContainer = () => {
           <div className="md:flex md:flex-col">
             <button
               onClick={handleSimpleBooking}
-              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
+              className="w-full mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
             >
               Simple Bookmarking
             </button>
@@ -79,7 +79,7 @@ export const SliceContainer = () => {
           <div className="md:flex md:flex-col">
             <button
               onClick={handleSpeedySearching}
-              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
+              className="w-full mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
             >
               Speedy Searching
             </button>
@@ -96,7 +96,7 @@ export const SliceContainer = () => {
           <div className="md:flex md:flex-col">
             <button
               onClick={handleEasySharing}
-              className="w-[302px] mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
+              className="w-full mt-4 mb-4 text-base text-very-dark-blue text-opacity-90 text-center md:w-[150px] md:text-sm md:hover:text-soft-red"
             >
               Easy Sharing
             </button>
