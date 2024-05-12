@@ -35,7 +35,7 @@ export const SliceContainer = () => {
   return (
     <>
       <div className="mb-8 md:mx-14">
-        <div className="mb-10 mx-5">
+        <div className="mb-10 mx-5 lg:mx-32">
           <div className={`${viewSimpleBooking ? "" : "hidden"}`}>
             <Slice
               title="Features"

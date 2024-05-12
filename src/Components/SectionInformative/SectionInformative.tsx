@@ -6,7 +6,7 @@ const icons = svg.icons;
 
 export const SectionInformative = () => {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row lg:gap-20">
       <div className="relative mb-12">
         <div className="absolute top-[2.2rem] left-0 -z-50">
           <img src={icons["icon-rectangle-left"]} alt="icon rectangle" />
@@ -18,7 +18,7 @@ export const SectionInformative = () => {
           />
         </div>
       </div>
-      <div className="mx-5 mt-8">
+      <div className="mx-5 mt-8 lg:mr-20">
         <H2 styles="md:text-start md:text-2xl">Bookmark in one click</H2>
         <div>
           <P styles="md:text-xs md:text-start">

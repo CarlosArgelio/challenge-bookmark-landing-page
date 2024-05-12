@@ -5,7 +5,7 @@ const icons = svg.icons;
 
 export const Footer = () => {
   return (
-    <footer className="bg-very-dark-blue h-[334px] md:h-full">
+    <footer className="bg-very-dark-blue h-full">
       <div className="flex flex-col items-center justify-center p-5 md:flex-row md:p-0">
         <div className="mb-10 md:m-5">
           <img src={logos["logo-bookmark-bg-text-white"]} alt="logo bookmark" />

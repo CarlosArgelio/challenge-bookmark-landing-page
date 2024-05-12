@@ -11,7 +11,7 @@ const icons = svg.icons;
 export const CallToAction = ({ openMenu }: PropsCTA) => {
   return (
     <div className="flex flex-col-reverse md:flex-row md:m-0">
-      <div className="mx-5 md:pl-6 md:pr-6">
+      <div className="mx-5 md:pl-6 md:pr-6 lg:mr-20">
         <H2 styles="md:text-start md:text-2xl">A Simple Bookmark Manager</H2>
         <div>
           <P styles="md:text-xs md:text-start">
@@ -21,7 +21,7 @@ export const CallToAction = ({ openMenu }: PropsCTA) => {
           </P>
         </div>
 
-        <div className="flex justify-between mb-36">
+        <div className="flex justify-between mb-36 lg:justify-normal lg:gap-4">
           <ButtonPrimary
             type="typeTwo"
             width={151}

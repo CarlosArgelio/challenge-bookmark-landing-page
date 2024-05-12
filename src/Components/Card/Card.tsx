@@ -12,7 +12,7 @@ const utils = svg.utils;
 export const Card = ({ logo, title, version }: Prop) => {
   return (
     <>
-      <div className="flex flex-col items-center mb-10 w-[280px] h-[371px] mx-12 rounded-2xl shadow-lg">
+      <div className="flex flex-col items-center mb-10 w-[280px] h-[371px] mx-12 rounded-2xl shadow-lg lg:justify-center lg:mx-2 lg:h-[390px]">
         <div className="mt-12 mb-8">
           <img src={logo} alt="Icon" />
         </div>
