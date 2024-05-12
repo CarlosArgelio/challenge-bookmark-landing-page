@@ -8,6 +8,7 @@ import IconFacebook from "./img/icon-facebook.svg";
 import IconTwitter from "./img/icon-twitter.svg";
 import IconXWhite from "./img/icon-x-white.svg";
 import IconRectangleRigth from "./img/icon-rectangle-rigth.svg";
+import IconRectangleXLRigth from "./img/icon-rectangle-xl-rigth.svg";
 import IconRectangleLeft from "./img/icon-rectangle-left.svg";
 import IconRectangleRed from "./img/icon-rectangle-red.svg";
 import IconError from "./img/icon-error.svg";
@@ -30,6 +31,7 @@ export const svg = {
     "icon-twitter": IconTwitter,
     "icon-x-white": IconXWhite,
     "icon-rectangle-rigth": IconRectangleRigth,
+    "icon-rectangle-xl-rigth": IconRectangleXLRigth,
     "icon-rectangle-left": IconRectangleLeft,
     "icon-rectangle-red": IconRectangleRed,
     "icon-error": IconError,

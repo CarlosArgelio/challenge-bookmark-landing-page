@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { H2, P, ButtonPrimary } from "./../../Components";
 import { svg } from "./../../assets";
 
